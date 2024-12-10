@@ -1,7 +1,7 @@
 //i wanted to make an app made solely by antifurries, thats what this is
 #include <stdio.h>
 #include <stdlib.h>
-#include <freeglut.h>
+#include <glut.h>
 
 char theme[];
 char *uidata[12];
