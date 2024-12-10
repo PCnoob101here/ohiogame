@@ -30,7 +30,19 @@ if(fl = NULL)
 {
     return 0;
 }
-
+char head = 0;
+char step = 0;
+while(step == )
+{
+    fseek(fl, head, SEEK_SET);
+    switch(step)
+    {
+        case 0: head = 1;
+                step = 1;
+                break;
+        case 1: calloc()
+    }
+}
 fclose(fl);
 return 0;
 }
