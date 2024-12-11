@@ -47,6 +47,11 @@ fclose(fl);
 return 0;
 }
 
+void scene(){
+    glbegin();
+    glend();
+}
+
 int main()
 {
     glutInit(&argc, argv);
