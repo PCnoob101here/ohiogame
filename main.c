@@ -1,4 +1,6 @@
+#if WIN32
 #include <windows.h>
+#endif // WIN32
 
 const char g_szClassName[] = "myWindowClass";
 
@@ -19,8 +21,8 @@ LRESULT CALLBACK WndProc(HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam)
     return 0;
 }
 
-char rakas engine(){
-    
+char pcnoobengine(){
+return 0;
 }
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance,
