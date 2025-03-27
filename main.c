@@ -1,6 +1,9 @@
 #if WIN32
 #include <windows.h>
+#include <GL/wglext.h>
 #endif // WIN32
+#include <GL/gl.h>
+#include <GL/glext.h>
 
 const char g_szClassName[] = "myWindowClass";
 
