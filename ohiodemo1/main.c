@@ -17,30 +17,30 @@ void makdisplists()
         1.0f, 0.13f,
         0.5f, 0.15f,
         0.3f, 0.16f,
-        ///tiny furs
+        ///2 tiny furs
         -0.28f, 0.16f,
         0.02f, 0.16f,
         0.35f, 0.22f,
+        
+        ///checkbox
+        ///button switch
 
-          };
+        };
     glEnableClientState(GL_VERTEX_ARRAY);
     glVertexPointer(2, GL_FLOAT, 0, gameverts);
     glNewList(FURRY_HEAD_C, GL_COMPILE);
     //the vibrant colored part of the head
     glDrawArrays();
     //little detail
-    glBegin(GL_TRIANGLES);
-    glEnd();
+    glDrawArrays(GL_TRIANGLES, 9, 6);
     glEndList();
     glNewList(FURRY_HEAD_NC, GL_COMPILE);
     //white head part
     glColor3f(1.0f, 1.0f, 1.0f);
-    glBegin();
-    glEnd();
+    glDrawArrays();
     //nose
     glColor3f(0.0f, 0.0f, 0.0f);
-    glBegin(GL_POLYGON);
-    glEnd();
+    glDrawArrays(GL_POLYGON);
     glEndList();
     glNewList(CHECKBOX_ON, GL_COMPILE);
     glColor3f(0.0f, 0.2f, 0.0f);
